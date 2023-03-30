@@ -4,10 +4,14 @@ namespace TesteAPI.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("home/index")]
+        [HttpGet]
         public IActionResult Index()
         {
-            return File("~/index.html", "text/html");
+            return View();
         }
-    }
 
+    }
 }
+
+
