@@ -7,7 +7,7 @@ namespace api.Controllers
     [Route("[controller]")]
     public class CalcularFatorial : ControllerBase
     {
-
+        [Route("/")]
         [HttpGet]
         public string Calcular(int number)
         {
